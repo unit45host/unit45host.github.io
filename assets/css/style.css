@@ -1,3 +1,1 @@
-.entry-thumb { height: 290px; overflow: hidden; }
-.entry-thumb img { transform: translate(0, 0); transition: transform 3s ease; }
-a.entry-thumb:hover img { opacity: 0.7; transform: translate(0, calc(-100% + 290px)); }
+@import 'integrity-light.css';
