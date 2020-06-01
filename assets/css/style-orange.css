@@ -499,7 +499,7 @@ hr[class^="col-"], hr[class*=" col-"] {
 .section-info {
   border-top: 1px solid #d4dde5;
   padding: 50px 0;
-  position: relative; }
+  position: center; }
   .section-info .section-title {
     display: inline-block;
     line-height: 1em;
