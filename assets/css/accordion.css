@@ -1,0 +1,51 @@
+<style>
+/* open-close accordion stylish */
+p.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom:10px;
+}
+
+/* Mouse-over bg-color */
+p.accordion.active, p.accordion:hover {
+    background-color: #ddd;
+}
+
+/* "plus" sign (+) */
+p.accordion:after {
+    content: '\2795'; 
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+/* "minus" sign (-) */
+p.accordion.active:after {
+    content: "\2796"; 
+}
+
+/* panel class */
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+    margin-bottom:10px;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px; /* Must more bigger than the content*/
+}
+</style>

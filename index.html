@@ -4,34 +4,59 @@
 
 <head>
 	<!-- Required meta tags -->
-	<title>Zoltan Gal portfolio</title>
+	<title>Short food supply chain (SFSCs)</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
 	<!-- Custom CSS styles-->
-	<link rel="stylesheet" href="/assets/css/style.css">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
-	<link rel="JavaScript" href="/assets/js/scrollup.js">
+
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<!-- Custom JavaScript -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" )
+      .accordion({
+        header: "> div > h3"
+      })
+      .sortable({
+        axis: "y",
+        handle: "h3",
+        stop: function( event, ui ) {
+          // IE doesn't register the blur when sorting
+          // so trigger focusout handlers to remove .ui-state-focus
+          ui.item.children( "h3" ).triggerHandler( "focusout" );
+ 
+          // Refresh accordion to handle new order
+          $( this ).accordion( "refresh" );
+        }
+      });
+  } );
+  </script>
+
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <a class="navbar-brand" href="#">Portfolio</a>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <a class="navbar-brand" href="#">About Us</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active"> <a class="nav-link" href="#">Home</a> </li>
-				<li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
-				<li class="nav-item"> <a class="nav-link" href="#">Contact</a> </li>
+				<li class="nav-item active"> <a class="nav-link" href="#market">Home</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#about-sfcs">About</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
 			</ul>
 		</div>
 	</nav>
 	<header id="page-header">
 		<div class="jumbotron jumbotron-fluid bg-light">
-			<div class="container text-center"> <img class="img-fluid rounded-circle" src="assets/images/user.png">
-				<h2>Welcome to my portfolio</h2>
-				<p class="lead">Here you will find examples of my work.</p>
+			<div class="container text-center"> <img class="img-fluid" style="width:200px;" src="assets/img/030-vegetables.png">
+				<h3>SFSCs - Short food supply chain</h3>
+				<p class="lead">SFSCs is a broad range of food production-distribution-consumption configurations</p>
+				<p>Shopping communities are created to distribute local products across the country. If you want to join such a community or would like to be involved in founding one, you are in the right place.</p>
 				<a class="btn social-icons" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a class="btn social-icons" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a class="btn social-icons" href="#"><i
 						class="fa fa-behance" aria-hidden="true"></i></a> <a class="btn social-icons" href="#"><i class="fa fa-500px" aria-hidden="true"></i></a> <a class="btn social-icons" href="#"><i class="fa fa-dribbble"
 						aria-hidden="true"></i></a>
@@ -42,21 +67,21 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12 text-center">
-					<h3 class="section-title">Portfolio Section</h3>
+					<h3 class="section-title" id="market">Market Section</h3>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-12 col-sm-6 col-md-4">
-					<div class="card entry-thumb"> <img class="card-img-top" src="/assets/img/portfolio-3fullpage-img-unit45host-1071x3835px.jpg" alt="Card image cap">
+					<div class="card"> <img class="card-img-top" src="assets/img/portfolio-img-unit45host-800x533px.jpg" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Unit45 Webhosting</h5>
 							<p class="card-text">Built a WHMCS template for Unit45 Webhosting </p>
-							<a href="#" class="btn btn-primary btn-sm">See Details</a>
+							<a href="https://unit45host.com" target="_blank" class="btn btn-primary btn-sm">See Details</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-12 col-sm-6 col-md-4">
-					<div class="card"> <img class="card-img-top" src="http://via.placeholder.com/800x533" alt="Card image cap">
+					<div class="card"> <img class="card-img-top" src="assets/img/sfcs-portfolio-img-275x175px-0008.jpg" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Project title</h5>
 							<p class="card-text">Project description goes here ...</p>
@@ -65,7 +90,7 @@
 					</div>
 				</div>
 				<div class="col-12 col-sm-6 col-md-4">
-					<div class="card"> <img class="card-img-top" src="http://via.placeholder.com/800x533" alt="Card image cap">
+					<div class="card"> <img class="card-img-top" src="assets/img/sfcs-portfolio-img-275x175px-0007.jpg" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Project title</h5>
 							<p class="card-text">Project description goes here ...</p>
@@ -74,7 +99,7 @@
 					</div>
 				</div>
 				<div class="col-12 col-sm-6 col-md-4">
-					<div class="card"> <img class="card-img-top" src="http://via.placeholder.com/800x533" alt="Card image cap">
+					<div class="card"> <img class="card-img-top" src="assets/img/sfcs-portfolio-img-275x175px-0006.jpg" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Project title</h5>
 							<p class="card-text">Project description goes here ...</p>
@@ -83,7 +108,7 @@
 					</div>
 				</div>
 				<div class="col-12 col-sm-6 col-md-4">
-					<div class="card"> <img class="card-img-top" src="http://via.placeholder.com/800x533" alt="Card image cap">
+					<div class="card"> <img class="card-img-top" src="assets/img/sfcs-portfolio-img-275x175px-0005.jpg" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Project title</h5>
 							<p class="card-text">Project description goes here ...</p>
@@ -92,7 +117,7 @@
 					</div>
 				</div>
 				<div class="col-12 col-sm-6 col-md-4">
-					<div class="card"> <img class="card-img-top" src="http://via.placeholder.com/800x533" alt="Card image cap">
+					<div class="card"> <img class="card-img-top" src="assets/img/sfcs-portfolio-img-275x175px-0004.jpg" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Project title</h5>
 							<p class="card-text">Project description goes here ...</p>
@@ -101,7 +126,7 @@
 					</div>
 				</div>
 				<div class="col-12 col-sm-6 col-md-4">
-					<div class="card"> <img class="card-img-top" src="http://via.placeholder.com/800x533" alt="Card image cap">
+					<div class="card"> <img class="card-img-top" src="assets/img/sfcs-portfolio-img-275x175px-0003.jpg" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Project title</h5>
 							<p class="card-text">Project description goes here ...</p>
@@ -110,7 +135,7 @@
 					</div>
 				</div>
 				<div class="col-12 col-sm-6 col-md-4">
-					<div class="card"> <img class="card-img-top" src="http://via.placeholder.com/800x533" alt="Card image cap">
+					<div class="card"> <img class="card-img-top" src="assets/img/sfcs-portfolio-img-275x175px-0002.jpg" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Project title</h5>
 							<p class="card-text">Project description goes here ...</p>
@@ -119,7 +144,7 @@
 					</div>
 				</div>
 				<div class="col-12 col-sm-6 col-md-4">
-					<div class="card"> <img class="card-img-top" src="http://via.placeholder.com/800x533" alt="Card image cap">
+					<div class="card"> <img class="card-img-top" src="assets/img/sfcs-portfolio-img-275x175px-0001.jpg" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Project title</h5>
 							<p class="card-text">Project description goes here ...</p>
@@ -134,16 +159,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12 text-center">
-					<h3 class="section-title">Section Heading</h3>
+					<h3 class="section-title" id="subpages">Subpages</h3>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-12 col-sm-12 col-md-6">
 					<div class="row">
-						<div class="col-4"> <img class="img-fluid" src="http://via.placeholder.com/480x320"> </div>
+						<div class="col-4"> <img class="img-fluid" src="assets/img/sfcs-q2-teamlead1.jpg"> </div>
 						<div class="col-8">
-							<h5>Heading</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+							<h5>Read more..</h5>
+							<p>When considering how many people to lead, there are several aspects to consider:</p>
 						</div>
 					</div>
 				</div>
@@ -177,11 +202,75 @@
 			</div>
 		</div>
 	</section>
+	
+	<p class="clear" style="padding-top:50px;"></p>
+	
+				<div class="container text-center" id="about-sfcs"> <img class="img-fluid" style="width:200px;" src="assets/img/sfcs-030-vegetables.png">
+				<h3>SFSCs - Short food supply chain</h3>
+				</div>
+				
+				
+				<div class="container" style="max-width:90%;position:center;">
+				<h3>FAQs</h3>
+				
+				<div id="accordion">
+  <div class="group">
+    <h3 style="font-weight: bold;font-size:1.5em;">Q1.:What is a shopping community?</h3>
+    <div>
+      <p>Shopping communities (also known as basket communities, bag communities, batyu communities) are groups organized on a voluntary basis in which local food producers and buyers come into direct contact. In shopping communities, in addition to the above two groups, there is a need for participants who organize the formation and operation of the community.
+			<ul>The goals of shopping communities can be:
+				<li>Providing a market for local products</li>
+				<li>Providing customers with healthy food</li>
+				<li>Local economy development</li>
+				<li>Community creation</li>
+				<li>Facilitate the flow of money in the local economy</li>
+				<li>Dissemination of knowledge, joint learning, formation of producer and consumer attitudes. Topics can range from introducing environmentally friendly farming practices to cooking courses to running an environmentally friendly household.</li>
+			</ul>
+	  </p>
+    </div>
+  </div>
+  <div class="group">
+    <h3 style="font-weight: bold;font-size:1.5em;">Q2.:How to start a shopping community?</h3>
+    <div>
+      <h4>Before answering this question, we would like to make a very important comment.</h4>
+		<p>Shopping communities are self-organizing, self-governing groups. It makes sense to create a community when self-organization and self-determination are on the ground of the community. Self-organization is one of the strongest forms of organization. This is because it does not depend on economic circumstances to the same extent as other organizational solutions. It is the awareness of the people who make up the community and the people who organize the life of the community that most determines how the community works.</p>
+		<p style="font-weight: bold;font-size:1.1em;">There are a number of small steps to launching a shopping community. The first and most important question is how to create an organizing team.</p>
+			<ul style="font-weight: bold;font-size:0.9em;">Setting up the organizing team:
+				<li>We recommend having several people on the organizing team. Be producers, prospective customers, IT professionals, business leaders and NGOs. You need a diverse and multi-skilled team. It requires participants who represent different perspectives, are open to getting to know each other, to understand each other and to implement joint planning. Let’s strive for diversity because that’s the value here too. You will experience how much it is later.</li>
+				<li>In domestic practice, there are communities that are kept alive by one person, organized by one person at a time. There are communities run by 2-3 people and there are communities run by 5-6 people. Obviously, a larger headcount provides greater security in operation.</li>
+				<li>Self-organization also requires a minimum of organizational capacity (organizing team). </li>
+				&nbsp;
+					<DL>
+						<DT><STRONG>When considering how many people to lead, there are several aspects to consider:</STRONG>
+							<DD>Please check this link: <a href="teamlead1.html" target="_self" ><span style="color:blue;strong;">teamlead1.html</a>
+		<p class="clear:both"></p>					
+		<p>Until the opening, a number of things need to be organized. You can find out more about this under ‘Additional conditions for starting shopping communities’.</p>
+	</div>
+  </div>
+  <div class="group">
+    <h3 style="font-weight: bold;font-size:1.5em;">Q3.:Further conditions and steps for starting shopping communities</h3>
+    <div>
+      <p>In the following, we have tried to list the most important topics that are needed to start a shopping community. What is described here is non-binding, our suggestions are obviously recommendations. We believe that every community can create systems and rules for its own operation.</p>
+      <p>Each community will be strong if it develops its own operating systems. It is very important that the local community processes the following topics and provides answers to them! This will ensure that the local community will see the shopping community as their own, and with this method you can mobilize far more local resources than if you wanted to take over a system that was already established somewhere. We need to learn from examples that work elsewhere. From there, it is worth dropping many good examples and adapting it to ourselves, to yourself. It is also worth learning from the mistakes made by others.</p>
+      <p>That’s why we’re going to organize a network between shopping communities. But everyone has to take their own steps. No one will organize a shopping community for you.</p>
+      
+    </div>
+  </div>
+  <div class="group">
+    <h3 style="font-weight: bold;font-size:1.5em;">Q4.:XXXXXXXXXXXXXXXXX</h3>
+    <div>
+      <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+    </div>
+  </div>
+</div>
+
+	<p class="clear" style="clear:both;padding-bottom:120px;"></p>
+	
 	<section class="bg-white">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 text-center">
-					<h3 class="section-title">Contact Form</h3>
+					<h3 class="section-title" id="contact">Contact Form</h3>
 				</div>
 			</div>
 			<div class="row">
@@ -205,6 +294,7 @@
 			</div>
 		</div>
 	</section>
+	
 	<footer id="page-footer" class="bg-light">
 		<div class="container">
 			<span class="text-muted">Copyright Your Name</span>
