@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="/assets/css/style.css" />
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<!-- Custom JavaScript -->
-  
+  <script src="/assets/js/extra.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -23,24 +23,7 @@
   
   
   <script>
-  $( function() {
-    $( "#accordion" )
-      .accordion({
-        header: "> div > h3"
-      })
-      .sortable({
-        axis: "y",
-        handle: "h3",
-        stop: function( event, ui ) {
-          // IE doesn't register the blur when sorting
-          // so trigger focusout handlers to remove .ui-state-focus
-          ui.item.children( "h3" ).triggerHandler( "focusout" );
- 
-          // Refresh accordion to handle new order
-          $( this ).accordion( "refresh" );
-        }
-      });
-  } );
+  dmx.Component("bs4-modal",{attributes:{nobackdrop:{type:Boolean,default:!1},nocloseonclick:{type:Boolean,default:!1},nokeyboard:{type:Boolean,default:!1},nofocus:{type:Boolean,default:!1},show:{type:Boolean,default:!1}},methods:{toggle:function(){jQuery(this.$node).modal("toggle")},show:function(){jQuery(this.$node).modal("show")},hide:function(){jQuery(this.$node).modal("hide")},update:function(){jQuery(this.$node).modal("handleUpdate")}},events:{show:Event,shown:Event,hide:Event,hidden:Event},render:function(o){this.$node=o,this.$parse(),jQuery(o).on("show.bs.modal",this.dispatchEvent.bind(this,"show")),jQuery(o).on("shown.bs.modal",this.dispatchEvent.bind(this,"shown")),jQuery(o).on("hide.bs.modal",this.dispatchEvent.bind(this,"hide")),jQuery(o).on("hidden.bs.modal",this.dispatchEvent.bind(this,"hidden")),this.update({})},update:function(o){JSON.stringify(o)!=JSON.stringify(this.props)&&jQuery(this.$node).modal({backdrop:!this.props.nobackdrop&&this.props.nocloseonclick?"static":!this.props.nobackdrop,keyboard:!this.props.nokeyboard,focus:!this.props.nofocus,show:!!this.props.show})},beforeDestroy:function(){jQuery(this.$node).off(".bs.modal"),jQuery(this.$node).modal("dispose")}});
   
   </script>
 
@@ -82,7 +65,7 @@
 						<div class="card-body">
 							<h5 class="card-title">Unit45 Webhosting</h5>
 							<p class="card-text">Built a WHMCS template for Unit45 Webhosting </p>
-							<a href="https://unit45host.com" target="_blank" class="btn btn-primary btn-sm">See Details</a>
+							<a href="#modal1" class="btn btn-primary btn-sm">See Details</a>
 						</div>
 					</div>
 				</div>
@@ -249,6 +232,29 @@
 			</div>
 		</div>
 	</section>
+	
+	<!-- Modal window 1 -->
+	<div class="modal" id="modal1" is="dmx-bs4-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+	<!-- END Modal window 1 -->
+
 	
 	<footer id="page-footer" class="bg-light">
 		<div class="container">
