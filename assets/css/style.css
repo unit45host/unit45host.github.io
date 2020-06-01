@@ -1,12 +1,9 @@
 @import url("integrity-light.css"); /* Using a url */
-@import url("ethos.css"); /* Using a url */
-@import url("renew.css"); /* Using a url */
-
 
 /* =============================================================================
 // ASSETS/CSS/STYLE.CSS
 // -----------------------------------------------------------------------------
-// Styles for Zoltan Gal portfolio page, hosted on Github: unit45host.github.io
+// Styles for SFCS page, hosted on Github: unit45host.github.io
 // http://unit45host.github.io
 // ========================================================================== */
 
@@ -53,6 +50,10 @@
 
 /* Extras
 // ========================================================================== */
+
+
+/* panel class */
+
 div.panel {
     display: none;
 	padding: 0 18px;
@@ -103,21 +104,4 @@ p.accordion:after {
 /* "minus" sign (-) */
 p.accordion.active:after {
     content: "\2796"; 
-}
-
-/* panel class */
-
-div.panel1 {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.4s ease-in-out;
-    opacity: 0;
-    margin-bottom:10px;
-}
-
-div.panel1.show {
-    opacity: 1;
-    max-height: 500px; /* Must more bigger than the content*/
 }
