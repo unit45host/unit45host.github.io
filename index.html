@@ -8,15 +8,20 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
 	<!-- Custom CSS styles-->
-
 	<link rel="stylesheet" href="/assets/css/style.css" />
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<!-- Custom JavaScript -->
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
+  
   <script>
   $( function() {
     $( "#accordion" )
@@ -36,6 +41,7 @@
         }
       });
   } );
+  
   </script>
 
 </head>
@@ -55,8 +61,8 @@
 		<div class="jumbotron jumbotron-fluid bg-light">
 			<div class="container text-center"> <img class="img-fluid" style="width:200px;" src="/assets/img/sfcs-030-vegetables.png">
 				<h3>SFSCs - Short food supply chain</h3>
-				<p class="lead">SFSCs is a broad range of food production-distribution-consumption configurations</p>
-				<p>Shopping communities are created to distribute local products across the country. If you want to join such a community or would like to be involved in founding one, you are in the right place.</p>
+				<h5>SFSCs is a broad range of food production-distribution-consumption configurations</h5>
+				<h6>Shopping communities are created to distribute local products across the country. If you want to join such a community or would like to be involved in founding one, you are in the right place.</h6>
 				<a class="btn social-icons" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a class="btn social-icons" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a class="btn social-icons" href="#"><i
 						class="fa fa-behance" aria-hidden="true"></i></a> <a class="btn social-icons" href="#"><i class="fa fa-500px" aria-hidden="true"></i></a> <a class="btn social-icons" href="#"><i class="fa fa-dribbble"
 						aria-hidden="true"></i></a>
@@ -204,19 +210,23 @@
 	</section>
 	
 	<p class="clear" style="padding-top:50px;"></p>
-	
-				<div class="container text-center" id="about-sfcs"> <img class="img-fluid" style="width:200px;" src="/assets/img/sfcs-030-vegetables.png">
-				<h3>SFSCs - Short food supply chain</h3>
+				<div class="container text-center" id="about-sfcs">
+					<h3>SFSCs - Short food supply chain</h3>
 				</div>
-				
-				
-				<div class="container" style="max-width:90%;position:center;">
-				<h3>FAQs</h3>
-				
-				<div id="accordion">
-  <div class="group">
-    <h3 style="font-weight: bold;font-size:1.5em;">Q1.:What is a shopping community?</h3>
-    <div>
+				<div class="hero-image"></div>
+
+
+	<p class="clear" style="clear:both;padding-bottom:120px;"></p>
+
+		<section class="bg-white">			
+				<div class="container d-flex justify-content-center align-self-stretch" id="accordion">
+
+			<div class="group">
+
+					<div class="group">
+						<h3 style="font-weight: bold;font-size:1.5em; width:800px; text-align:left;" href="#demo1" class="btn btn-primary" data-toggle="collapse">Q1.:What is a shopping community?</a></h3>
+						<div id="demo1" class="collapse">
+							   <div>
       <p>Shopping communities (also known as basket communities, bag communities, batyu communities) are groups organized on a voluntary basis in which local food producers and buyers come into direct contact. In shopping communities, in addition to the above two groups, there is a need for participants who organize the formation and operation of the community.
 			<ul>The goals of shopping communities can be:
 				<li>Providing a market for local products</li>
@@ -228,10 +238,13 @@
 			</ul>
 	  </p>
     </div>
-  </div>
-  <div class="group">
-    <h3 style="font-weight: bold;font-size:1.5em;">Q2.:How to start a shopping community?</h3>
-    <div>
+						</div>
+					</div>					
+		<br />
+				<div class="group">
+					<h3 style="font-weight: bold;font-size:1.5em; width:800px; text-align:left;" href="#demo2" class="btn btn-primary" data-toggle="collapse">Q2.:How to start a shopping community?</a></h3>
+					<div id="demo2" class="collapse">
+						    <div>
       <h4>Before answering this question, we would like to make a very important comment.</h4>
 		<p>Shopping communities are self-organizing, self-governing groups. It makes sense to create a community when self-organization and self-determination are on the ground of the community. Self-organization is one of the strongest forms of organization. This is because it does not depend on economic circumstances to the same extent as other organizational solutions. It is the awareness of the people who make up the community and the people who organize the life of the community that most determines how the community works.</p>
 		<p style="font-weight: bold;font-size:1.1em;">There are a number of small steps to launching a shopping community. The first and most important question is how to create an organizing team.</p>
@@ -246,25 +259,33 @@
 		<p class="clear:both"></p>					
 		<p>Until the opening, a number of things need to be organized. You can find out more about this under ‘Additional conditions for starting shopping communities’.</p>
 	</div>
-  </div>
-  <div class="group">
-    <h3 style="font-weight: bold;font-size:1.5em;">Q3.:Further conditions and steps for starting shopping communities</h3>
-    <div>
+					</div>
+				</div>
+		<br />
+				<div class="group">
+					<h3 style="font-weight: bold;font-size:1.5em; width:800px; text-align:left;" href="#demo3" class="btn btn-primary" data-toggle="collapse">Q3.:Further conditions and steps for starting shopping communities</a></h3>
+					<div id="demo3" class="collapse">
+						    <div>
       <p>In the following, we have tried to list the most important topics that are needed to start a shopping community. What is described here is non-binding, our suggestions are obviously recommendations. We believe that every community can create systems and rules for its own operation.</p>
       <p>Each community will be strong if it develops its own operating systems. It is very important that the local community processes the following topics and provides answers to them! This will ensure that the local community will see the shopping community as their own, and with this method you can mobilize far more local resources than if you wanted to take over a system that was already established somewhere. We need to learn from examples that work elsewhere. From there, it is worth dropping many good examples and adapting it to ourselves, to yourself. It is also worth learning from the mistakes made by others.</p>
       <p>That’s why we’re going to organize a network between shopping communities. But everyone has to take their own steps. No one will organize a shopping community for you.</p>
       
     </div>
-  </div>
-  <div class="group">
-    <h3 style="font-weight: bold;font-size:1.5em;">Q4.:XXXXXXXXXXXXXXXXX</h3>
-    <div>
-      <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-    </div>
-  </div>
-</div>
-
-	<p class="clear" style="clear:both;padding-bottom:120px;"></p>
+					</div>
+				</div>
+		<br />
+				<div class="group">
+					<h3 style="font-weight: bold;font-size:1.5em; width:800px; text-align:left;" href="#demo4" class="btn btn-primary" data-toggle="collapse">Q4.:XXXXXXXXXXXXXXXXX</a></h3>
+					<div id="demo4" class="collapse">
+						<p>A4</p><p>A4a </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<section>
+		<p class="clear" style="clear:both;padding-bottom:120px;"></p>
+	
 	
 	<section class="bg-white">
 		<div class="container">
