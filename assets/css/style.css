@@ -21,7 +21,7 @@
 /* Home
 // ========================================================================== */
 
-.entry-thumb { height: 290px; overflow: hidden; }
+.entry-thumb { height: 335px !important; overflow: hidden !important; }
 
 
 
