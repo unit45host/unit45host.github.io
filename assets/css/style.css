@@ -58,7 +58,7 @@ h3.section-title {
 // ========================================================================== */
 
 .hero-image {
-  background-image: url("http://localhost:8080/p2/unit45host.github.io/assets/img/sfcs-header-img-1920x770px.jpg"); /* The image used */
+  background-image: url("../img/sfcs-header-img-1920x770px.jpg"); /* The image used */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
