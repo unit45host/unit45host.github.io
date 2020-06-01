@@ -1,5 +1,4 @@
-@import 'integrity-light.css';
-
+@import url("integrity-light.css"); /* Using a url */
 
 /* =============================================================================
 // ASSETS/CSS/STYLE.CSS
