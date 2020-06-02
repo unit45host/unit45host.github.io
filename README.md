@@ -1,33 +1,43 @@
-## Welcome to GitHub Pages
+## Welcome to my GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/unit45host/unit45host.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+I am Zoltan Gal,
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Soon Full Stack Developer. :)
 
-### Markdown
+In the past 25 year I was work with Linux Servers as system administrator, and had also a few web projects where I was involved full or part time.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+I will probably update the current gihub page to a portfolio - where I will highlite my previous works.
 
-```markdown
-Syntax highlighted code block
+At the moment I created a responsive and mobile first/mobile friendly basic website for the idea of "cart - communities" = Short food supply chain (SFSCs) ( https://en.wikipedia.org/wiki/Short_food_supply_chains ).
 
-# Header 1
-## Header 2
-### Header 3
+The source of the project was the request from my friend Gabriel, and a Hungarian cart-community website : https://kosarkozosseg.hu/ .
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+I write here some of the issues I was facing through the build-process:
 
-**Bold** and _Italic_ and `Code` text
+Gitpod - wont do the "git push" -- push back to the origin. COuldn't fin dthe reasaon why, but when searched Google - lots of other also claiming the same.
 
-[Link](url) and ![Image](src)
-```
+SO, I decided to do it on my windows laptop and will push with git desktop app.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+There next issue - Github use relative path to files - XAMPP ( Apachefriend LAMP ) and localhost use direct - relative path to files/folders.
 
+Therefore I had to duplicate my works - in every steps - if I want to see the changes without push to github / upload it, refresh 5-6 times after each upload ( probably cache/CDN overwrite slow ).
+
+
+Its done and can be seen: 
+http://unit45host.github.io  ( no SSL in 2020 .. ) 
+
+
+I used some third party stylesheets, javascript sources to achieve the plan - an dspeed up devtime.
+
+If you have any concerns, ideas, contructive criticism - please send me email : kukacka dot kukac at unit45host dot com .
+
+Thank you,
+
+ps.:
+
+
+Well.. the theme - wasnt worked for me, so I created from scratch.
 ### Jekyll Themes
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/unit45host/unit45host.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
